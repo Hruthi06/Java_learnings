@@ -28,7 +28,7 @@ class conditional3 {
             System.out.println("Grade: A");
         } else if (marks >= 80) {
 
-            
+
             System.out.println("Grade: B");
         } else if (marks >= 70) {
             System.out.println("Grade: C");
@@ -107,3 +107,78 @@ class logicaloperator {
 
     }
 }
+
+
+class positive_negative {
+    public static void main(String[] args) {
+        int number = -10;
+
+        if(number > 0) {
+            System.out.println(number + " is a positive number.");
+        } else if (number < 0) {
+            System.out.println(number + " is a negative number.");
+        } else {
+            System.out.println("The number is zero.");
+        }
+    }
+}
+
+
+class largest_of_three {
+    public static void main(String[] args) {
+        int a = 10, b = 20, c = 15;
+
+        if(a >= b && a >= c) {
+            System.out.println(a + " is the largest number.");
+        } else if (b >= a && b >= c) {
+            System.out.println(b + " is the largest number.");
+        } else {
+            System.out.println(c + " is the largest number.");
+        }
+    }
+}
+
+
+class vowel_consonant {
+    public static void main(String[] args) {
+        char ch = 'A';
+
+        if(ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U' ||
+           ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+            System.out.println(ch + " is a vowel.");
+        } else {
+            System.out.println(ch + " is a consonant.");
+        }
+    }
+}
+
+
+class calculator {
+    public static void main(String[] args) {
+        int num1 = 10, num2 = 5;
+        char operator = '+';
+
+        switch(operator) {
+            case '+':
+                System.out.println("The sum is: " + (num1 + num2));
+                break;
+            case '-':
+                System.out.println("The difference is: " + (num1 - num2));
+                break;
+            case '*':
+                System.out.println("The product is: " + (num1 * num2));
+                break;
+            case '/':
+                if(num2 != 0) {
+                    System.out.println("The quotient is: " + (num1 / num2));
+                } else {
+                    System.out.println("Cannot divide by zero.");
+                }
+                break;
+            default:
+                System.out.println("Invalid operator.");
+        }
+    }
+}
+
+
