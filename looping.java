@@ -39,3 +39,28 @@ class even_numbers2 {
         }
     }
 }
+
+
+class sum_of_numbers {
+    public static void main(String[] args) {
+        int sum = 0;
+        for(int i=1; i<=10; i++) {
+            sum += i; // sum = sum + i
+        }
+        System.out.println("The sum of numbers from 1 to 10 is: " + sum);
+    }
+}
+
+
+class do_while_example {
+    public static void main(String[] args) {
+        int i = 1;
+        do {
+            System.out.println("The value of i is: " + i);
+            i++;
+        } while(i <= 5);
+    }
+
+}
+
+
