@@ -141,10 +141,16 @@ class largest_of_three {
 
 class vowel_consonant {
     public static void main(String[] args) {
+        char[ ] vowels = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
         char ch = 'A';
-
-        if(ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U' ||
-           ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+        boolean isVowel = false;
+        for(char vowel : vowels) {
+            if(ch == vowel) {
+                isVowel = true;
+                break;
+            }
+        }
+        if(isVowel) {
             System.out.println(ch + " is a vowel.");
         } else {
             System.out.println(ch + " is a consonant.");
