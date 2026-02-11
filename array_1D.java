@@ -64,3 +64,18 @@ class accepting_input_array {
         }
     }
 }
+
+class array  {
+    public static void main(String[] args) {
+        int[] num = {10, 20, 30, 40, 50};
+        System.out.println("The first element of the array is: " + num[0]);
+    }
+}
+
+
+class array1 {
+    public static void main(String[] args) {
+        int[][] num = {{10, 20}, {30, 40}};
+        System.out.println("The first element of the array is: " + num[0][0]);
+    }
+}
