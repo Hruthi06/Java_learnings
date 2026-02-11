@@ -69,3 +69,39 @@ class conditional4 {
         }
     }
 }
+
+
+class logicaloperator {
+    public static void main(String[] args) {
+        int age = 25;
+        boolean hasticket = true;
+
+        if(age >= 18 && hasticket) {
+            System.out.println("You can enter the concert.");
+        } else {
+            System.out.println("You cannot enter the concert.");
+        }
+
+
+        boolean isWeekend = true;
+        boolean isHoliday = false;
+
+        if(isWeekend || isHoliday) {
+            System.out.println("You can relax.");
+        } else {
+            System.out.println("You cant relax .");
+        }
+
+
+        boolean isRaining = false;
+
+        if (!isRaining) 
+            {
+            System.out.println("You can go outside.");
+        } else {
+            System.out.println("You should stay indoors.");
+            
+        }
+
+    }
+}
